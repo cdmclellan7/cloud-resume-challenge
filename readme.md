@@ -14,3 +14,9 @@ A work-in-progress site to host my resume on AWS. Following the steps of the [Cl
 ### 25 March, 2022
 
 - Added a GitHub Action that is triggered by pushes to the main branch. And runs only when files in the frontend folder are changed.
+
+### 29 March, 2022
+
+- Added scripts to the package.json to upload files to S3 and invalidate the CloudFront cache. - https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-objects-sync , https://remarkablemark.org/blog/2019/04/13/copy-s3-invalidate-cloudfront-cache/
+- Edited GitHub Action (Deploy Frontend) to run those scripts to upload files to AWS, and it worked first time!
+- Added a manual trigger to the GitHub Action. - https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow
