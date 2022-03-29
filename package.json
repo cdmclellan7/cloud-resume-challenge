@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "s3-upload": "aws s3 sync frontend/ s3://cdmcloudresume/"
+    "s3-upload": "aws s3 sync frontend/ s3://cdmcloudresume/",
+    "invalidate-cloudfront": "aws cloudfront create-invalidation --distribution-id E3VTSI6GHM1PE4 --paths '/*'"
   },
   "repository": {
     "type": "git",
