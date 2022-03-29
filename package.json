@@ -4,7 +4,8 @@
   "description": "resume hosted on AWS to complete the Cloud Resume Challenge",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "s3-upload": "aws s3 sync frontend/ s3://cdmcloudresume/"
   },
   "repository": {
     "type": "git",
