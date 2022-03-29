@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "s3-upload": "aws s3 sync frontend/ s3://cdmcloudresume/",
-    "invalidate-cloudfront": "aws cloudfront create-invalidation --distribution-id E3VTSI6GHM1PE4 --paths '/*'"
+    "invalidate-cloudfront": "aws cloudfront create-invalidation --distribution-id E3VTSI6GHM1PE4 --paths '/*'",
+    "deploy-frontend": "npm run s3-upload && npm run invalidate-cloudfront"
   },
   "repository": {
     "type": "git",
