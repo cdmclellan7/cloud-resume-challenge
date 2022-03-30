@@ -25,3 +25,4 @@ A work-in-progress site to host my resume on AWS. Following the steps of the [Cl
 
 - Made backend folder in repo to hold backend SAM template and Python tests.
 - Made a GitHub action that is triggered when the backend folder contents changes.
+- Made an admin user and user group so the root user doesn't have to be used via the CLI. - https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html
